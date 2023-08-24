@@ -81,6 +81,23 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+/* Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000; /* Black color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Internet Explorer */
+body {
+  scrollbar-face-color: #000; /* Black color for the scrollbar */
+  scrollbar-track-color: #272829; /* Track color for the scrollbar */
+}
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -95,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.8s;
   padding: 1 15px;
-  background: rgba(5, 5, 5, 0.7); 
+  background: rgba(5, 5, 5, 0.92); 
   overflow-y: auto;
 
 }
@@ -302,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
-  font-size: 25px; /* Adjust the font size as desired */
+  font-size: 40px; /* Adjust the font size as desired */
 }
 
 @media (min-width: 1024px) {
@@ -730,7 +747,7 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #0f1010;
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #149ddd;
@@ -1020,7 +1037,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background: #000000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
